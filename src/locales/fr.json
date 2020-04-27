@@ -1,0 +1,167 @@
+{
+  "general": {
+    "404": "Page introuvable",
+    "language": "Langue",
+    "english": "Anglais",
+    "french": "Français",
+    "btn_more": "En savoir plus",
+    "more_about_me": "En savoir plus à propos de moi",
+    "send": "Envoyer",
+    "cancel": "Annuler"
+  },
+
+  "navigation_drawer": {
+    "status": "Étudiant",
+    "about_me": "A Propos de Moi",
+    "experiences": "Expériences",
+    "education": "Diplômes",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "bts_e6": "Epreuve du BTS E6"
+  },
+
+  "contact": {
+    "title": "Me Contacter",
+    "name": "Nom",
+    "company": "Entreprise",
+    "job": "Poste",
+    "email": "Adresse mail",
+    "phone": "Téléphone",
+    "message": "Message"
+  },
+
+  "home": {
+    "condition": "23 ans · Étudiant en 2ème année de BTS SIO SLAM",
+    "about_me": "<p>Dynamique et curieux par nature, j'ai en permanence des projets en cours, ce qui m'a permis de développer une certaine polyvalence.</p><p>Passionné par les nouvelles techniques de programmation, je suis attentif à concilier la sécurité et les performances des applications tout en les dotant de fonctionnalités innovantes et modernes.</p><p>L'expérience utilisateur étant au coeur de mes exigences, je veille à ce que l'ergonomie soit optimale et que l'application soit la plus agréable possible à utiliser.</p>",
+    "hobbies": "<p>Naturellement sociable, je passe une majorité de mon temps libre avec mes proches ou en société.</p><p>Je passe le restant de ce temps à faire du sport, à lire, ou encore à jouer.</p><p>Mon ouverture d'esprit m'a permis de m'intéresser à de nombreux domaines.</p><p>Les relations humaines et la psychologie m'intéresse particulièrement de par leurs complexités.</p>"
+  },
+
+  "employment": {
+    "title": "Expériences Professionnelles",
+    "latest": {
+      "company": "Caméros",
+      "address": "2 rue Joliot Curie, 25870 Les Auxons",
+      "date": "2 Septembre 2019 - Aujourd'hui",
+      "job": "Développeur web Backend  - Alternance",
+      "desc": "<ul><li>Développement de sites web en se basant sur le CMS Typo3.</li><li>Adaptations / évolutions de modules créés par l'entreprise.</li><li>Intégration de contenus statique via l'outil de template fourni par le CMS.</li><li>Support, développement et mise en oeuvre de correctifs.</li><li>Intégration aux sein de projets gérés selon la méthode Scrum.</li></ul>"
+    },
+    "2": {
+      "company": "IDfr",
+      "address": "17 Rue Alain Savary, 25000 Besançon",
+      "date": "3 Juin 2019 - 28 Juin 2019",
+      "job": "Développeur web Junior - Stage",
+      "desc": "Développement et intégration d'un module de statistiques sur un logiciel de gestion de candidatures."
+    },
+    "3": {
+      "company": "Industries",
+      "address": "Besançon et alentours",
+      "date": "Mars 2018 - Juillet 2018",
+      "job": "Opérateur machine polyvalent - Interim",
+      "desc": "Opérations de manutention dans diverses entreprises"
+    },
+    "4": {
+      "company": "Établissements de santé",
+      "address": "Besançon et alentours",
+      "date": "Septembre 2016 - Décembre 2017",
+      "job": "Étudiant Infirmier - Stages",
+      "desc": "Total de 20 semaines de stage"
+    },
+    "first": {
+      "company": "Armée de terre - 13ème Régiment du Génie",
+      "address": "Camp du Valdahon, 25800 Valdahon",
+      "date": "Août 2014 - Août 2015",
+      "job": "Soldat de Réserve - Réserve opérationelle",
+      "desc": "Total de 2 mois d'entrainemnt pendant les périodes de vacances et les weekends."
+    }
+  },
+
+  "education": {
+    "title": "Diplômes",
+    "latest": {
+      "school": "Lycée Général et Technologique Louis Pergaud",
+      "address": "91-93 Boulevard Léon Blum, 25000 Besançon",
+      "date": "Septembre 2018- Aujourd'hui",
+      "degree": "BTS SIO option SLAM",
+      "desc": "<ul><li>Brevet de technicien supérieur services informatiques aux organisations</li><li> Option solutions logicielles et applications métiers</li><li>Option facultative Mathématiques approfondies</li><li>1ère année en formation initiale, 2ème année en alternance</li></ul>"
+    },
+    "2": {
+      "school": "",
+      "address": "",
+      "date": "2015 - 2018",
+      "degree": "Beaucoup d'expériences, mais pas de diplômes",
+      "desc": ""
+    },
+    "3": {
+      "school": "Armée de terre - 13ème Régiment du Génie",
+      "address": "Camp du Valdahon, 25800 Valdahon",
+      "date": "Août 2015",
+      "degree": "Certificat d'Aptitude Militaire Élémentaire",
+      "desc": "Obtention du grade de Caporal"
+    },
+    "4": {
+      "school": "Lycée d' Enseignement Général Technologique et Professionnel Agricole de Besançon",
+      "address": "2 Rue des Chanets, 25410 Dannemarie-sur-Crête",
+      "date": "Septembre 2014 - Juillet 2015",
+      "degree": "Baccalauréat scientifique",
+      "desc": "Option Biologie"
+    },
+    "first": {
+      "school": "Armée de terre - 13ème Régiment du Génie",
+      "address": "Camp du Valdahon, 25800 Valdahon",
+      "date": "Août 2014",
+      "degree": "Formation Militaire Initiale du Réserviste",
+      "desc": "Entrée dans l'armée en tant qu'homme du rang."
+    }
+  },
+
+  "skills": {
+    "title": "Compétences",
+    "databases": "Bases de données",
+    "languages": "Langages de programmation, de script et de balisage",
+    "libs": "Librairies",
+    "server": "Serveur",
+    "os": "Systèmes d'exploitations",
+    "frameworks": "Frameworks",
+    "managers": "Gestionnaires de paquets et de versions",
+    "methodology": "Gestion de projet",
+    "mastery": {
+      "beginner": "Débutant",
+      "basic": "Basique",
+      "common": "Commun",
+      "mastered": "Maîtrisé",
+      "advanced": "Avancé"
+    }
+  },
+
+  "projects": {
+    "title": "Projets",
+    "techs_used": "Technologies utilisés",
+    "desc_project": "Description du projet",
+    "technical_details": "Détails techniques",
+
+    "cv": {
+      "title": "Mon Portfolio en ligne",
+      "desc": "Vous êtes actuellement sur ce projet. Il sert de support pour mes présentations, et permet d'accéder aux autres projets.",
+      "dialog": {
+        "desc": "<p>Ce projet a pour but de présenter mon portfolio sous la forme de site web. Ce site me présente brièvement et contient toutes les informations essentielles concernant mon parcours de formation au niveau et mes expériences professionnelles. Il fait également étalage des différentes compétences que j'ai pu acquérir. Mes projets sont aussi répertoriés sur ce site, avec leur description détaillé. Ces projets sont open source et sont téléchargeable via mon compte github.<p></p> De plus les projets que j'ai la possibilité d'héberger sont accessibles via un lien, de manière à accéder à la version d'essai.</p><p>Ce site est responsive et met également à disposition une version anglaise.</p>",
+        "technical_details": "<p>Concernant les technologies utilisées :</p><p> Côté backend, j'héberge ce site sur mon propre VPS propulsé par Debian. J'utilise également Docker qui me permet de conteneurisé les technologie dont j'ai besoin pour propulser le site en ligne et assurer son fonctionnement. J'utilise un conteneur ou est installé traefic qui joue le rôle de reverse-proxy me permettant de renouveler automatiquement les certificats SSL et de rediriger le trafic vers les bons conteneurs et via le bon protocole. Derrière celui ci se trouve un conteneur ou est installé un serveur web Nginx permettant de propulser le site en ligne. Un autre contient PHP-fpm, et se charge de m'envoyer des amils via le formuaire de contact présent en frontend.</p><p>Côté frontend, j'ai choisi d'utiliser le framework vuejs. Celui ci me permet de disposer d'une application web ne nécessitant aucun temps de rafraîchissement lors du changement de section ou de langue. Au-delà dae la fluidité que procure cette technologie, le poids total du site web une fois compilé est extrêmement faible, ce qui assure des performances optimales. De plus, cette technologie me permet de profiter pleinement des avantages du templating. L'écosystème de ce framework me permet également de disposer de nombreux modules tel axios ou encore i18n qui me permettent respectivement de faire des appels Ajax le plus simplement possible et de traduire le site.</p><p>Au niveau du design j'ai choisi d'utiliser la librairie Vuetify, orienté matérial design, qui me permet de bénéficier de nombreuses fonctionnalités permettant d'accélérer de simplifier le développement du frontend. On peut noter parmi celles-ci, le support des mouvement tactiles.</p>"
+      }
+    },
+    "gym_web": {
+      "title": "Salle de Sport (Web)",
+      "desc": "Site web fictif d'une salle de sport. Permet à l'utilisateur de s'inscrire à un programme d'entraienement. Accès admin pour gestion.",
+      "dialog": {
+        "desc": "<p>Ce projet a pour but de simuler le site internet une salle de sport. ceci doit donc permettre de nouveaux utilisateurs de s'inscrire, de gérer leur compte les informations qui lui sont y sont liées, de choisir un programme , de souscrire à un abonnement et enfin de choisir un mode de paiement. Celui-ci doit également avoir la possibilité d'enregistrer ses séances. Toutes ses données doivent être consultable par l'utilisateur.</p><p>Le site dois également disposer d'une interface d'administration inaccessible aux utilisateurs. Les administrateur pourrons ainsi gérer l'ensemble du contenu mis à la disposition des utilisateurs.</p>",
+        "technical_details": "<p>Concernant les technologie utilisée, j'utilise une base de données MariaDB pour stocker toutes les informations. Utilise également l'interface d'administration phpMyAdmin de manière à faciliter son accès.</p><p>Le site est basée majoritairement sur le framework symphony. Le rendu se fait donc via twig, le moteur de template de symphonie, et le back-office sera aussi gérer par les fonctionnalité qui met à disposition symphony. Le requétage de la base de données se fera via l'intermédiaire de l'ORM doctrine.</p>"
+      }
+    },
+    "gym_desktop": {
+      "title": "Salle de Sport (Bureau)",
+      "desc": "Application pour gèrer les adhérants à la salle de sport fictive, créer leur carte d'adhérent, et éditer leurs factures.",
+      "dialog": {
+        "desc": "<p>Ce projet a pour but de simuler logiciel de bureau permettant de gérer les utilisateurs d'une salle de sport, de générer des factures elle crée des cartes d'abonnés.</p>",
+        "technical_details": "<p>Concernant les détails techniques, j'ai choisi d'utiliser langage Java couplet au framework spring de manière à faciliter le développement de l'API Rest qui a pour vocation de servir les informations  à ma web application créer avec le framework vue JS.</p><p>J'ai choisi d'utiliser Junit en ce qui concerne les tests unitaires, gradle comme outils de build et le module spring boot JPA qui permet de requêter la base de données simplement.</p><p>L'API est servie par un serveur tomcat.</p>"
+      }
+    }
+  }
+}

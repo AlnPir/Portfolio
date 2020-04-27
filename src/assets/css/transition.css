@@ -1,0 +1,29 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.fade-enter-active {
+  transition-delay: 0.3s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.welcome-enter-active,
+.welcome-leave-active {
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.welcome-enter-active {
+  transition-delay: 0.3s;
+}
+
+.welcome-enter,
+.welcome-leave-active {
+  opacity: 0;
+}
