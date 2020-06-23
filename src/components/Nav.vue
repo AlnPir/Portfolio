@@ -80,8 +80,7 @@ export default {
           icon: "mdi-cellphone-link",
           text: "projects",
           route: "/projects"
-        },
-        { icon: "mdi-book", text: "bts_e6", route: "/bts" }
+        }
       ]
     };
   }

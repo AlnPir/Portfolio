@@ -15,8 +15,7 @@
     "experiences": "Experiences",
     "education": "Degrees",
     "skills": "Skills",
-    "projects": "Projects",
-    "bts_e6": "BTS E6 test"
+    "projects": "Projects"
   },
   "contact": {
     "title": "Contact Me",
@@ -136,7 +135,7 @@
       "desc": "You are currently on this project. It serves as support for my introductions, and allows to access the others projects.",
       "dialog": {
         "desc": "<p> The purpose of this project is to present my portfolio as a website. This website briefly introduces me and contains all the essential informations concerning my educational background and my professionals experiences. It display the different skills that I was able to acquire. My projects are also listed on this website, with their detailed description. These projects are open source and can be downloaded via my github account. <p>In addition, the projects that I can host are accessible using a link, to access the demo version. </p>This site is responsive and also provides an French version.</p> ",
-        "technical_details": "<p> Regarding  of the technologies used: </p> <p> On the backend side, I host this site on my own VPS powered by Debian. I also use Docker which allows me to containerize the technologies i need to propel the site online and keep it running. I use a container where traefic is installed which plays the role of reverse-proxy allowing me to automatically renew SSL certificates and redirect traffic to the right containers and using the right protocol. Behind this is find a container where is installed a Nginx web server to propel the site online. Another contains PHP-fpm, and is responsible for sending me emails using the contact form in frontend . </p> <p> On the front end, I chose to use the Vuejs framework, which allows me to have a web application that does not require any refresh time when changing sections or languages. Beyond fluidity that this technology provides, the total weight of the website once compiled is extremely low, which ensures optimal performance. In addition, this technology allows me to take full advantage of the benefits of templating. The ecosystem of this framework also allows me to have many modules such as axios or i18n which respectively allow me to make Ajax calls as simply as possible and to translate the site. </p> <p> At the design level i chose to use the Vuetify library, design-oriented hardware, which allows me to benefit from many features allowing to accelerate and simplify the development of the frontend. Among these, we can note the support of tactile movements. </p> "
+        "technical_details": "<p> Regarding  of the technologies used: </p> <p> On the backend side, I host this site using an hosting plan.</p> <p> On the front end, I chose to use the Vuejs framework, which allows me to have a web application that does not require any refresh time when changing sections or languages. Beyond fluidity that this technology provides, the total weight of the website once compiled is extremely low, which ensures optimal performance. In addition, this technology allows me to take full advantage of the benefits of templating. The ecosystem of this framework also allows me to have many modules such as axios or i18n which respectively allow me to make Ajax calls as simply as possible and to translate the site. </p> <p> At the design level i chose to use the Vuetify library, design-oriented hardware, which allows me to benefit from many features allowing to accelerate and simplify the development of the frontend. Among these, we can note the support of tactile movements. </p> "
       }
     },
     "gym_web": {

@@ -18,7 +18,7 @@
             <v-row class="mx-2">
               <v-col cols="12">
                 <v-text-field
-                  v-model="name"
+                  v-model="form.name"
                   :rules="nameRules"
                   prepend-icon="mdi-account"
                   name="name"
@@ -29,7 +29,7 @@
 
               <v-col cols="12">
                 <v-text-field
-                  v-model="email"
+                  v-model="form.email"
                   :rules="emailRules"
                   name="email"
                   required
@@ -42,6 +42,7 @@
                 <v-text-field
                   type="tel"
                   name="phone"
+                  v-model="form.phone"
                   prepend-icon="mdi-phone"
                   :label="$t(`contact.phone`)"
                 />
@@ -49,7 +50,7 @@
               <v-col cols="12">
                 <v-textarea
                   solo
-                  v-model="textarea"
+                  v-model="form.message"
                   :rules="textareaRules"
                   name="message"
                   prepend-icon="mdi-text"
@@ -78,14 +79,13 @@ export default {
   name: "PopinContact",
   data() {
     return {
-      dialog: null,
       form: {
         name: "",
         email: "",
         phone: "",
         message: ""
       },
-
+      dialog: null,
       valid: true,
       name: "",
       nameRules: [
@@ -114,7 +114,7 @@ export default {
             alert("Votre message à bien été envoyé !");
           })
           .catch(error => {
-            console.log(error);
+            console.log(this.form);
             alert("Une erreur est survenue, merci de réessayer.");
           });
       }

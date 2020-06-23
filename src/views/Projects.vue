@@ -63,7 +63,6 @@ export default {
                     brand: require("@/assets/img/brand/js.png"),
                     name: "JavaScript"
                   },
-
                   {
                     brand: require("@/assets/img/brand/vuejs.png"),
                     name: "Vue.js"
@@ -82,28 +81,12 @@ export default {
                     name: "PHP"
                   },
                   {
-                    brand: require("@/assets/img/brand/nginx.png"),
-                    name: "Nginx"
-                  },
-                  {
-                    brand: require("@/assets/img/brand/docker.png"),
-                    name: "Docker"
-                  },
-                  {
                     brand: require("@/assets/img/brand/git.png"),
                     name: "Git"
                   },
                   {
                     brand: require("@/assets/img/brand/npm.png"),
                     name: "npm"
-                  },
-                  {
-                    brand: require("@/assets/img/brand/debian.png"),
-                    name: "Debian"
-                  },
-                  {
-                    brand: require("@/assets/img/brand/traefik.png"),
-                    name: "Traefik"
                   }
                 ]
               }

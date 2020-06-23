@@ -14,7 +14,7 @@
           </transition>
         </v-content>
 
-        <!-- <PopinContact></PopinContact> -->
+        <PopinContact></PopinContact>
 
         <Footer></Footer>
       </v-app>

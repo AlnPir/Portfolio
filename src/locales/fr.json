@@ -16,8 +16,7 @@
     "experiences": "Expériences",
     "education": "Diplômes",
     "skills": "Compétences",
-    "projects": "Projets",
-    "bts_e6": "Epreuve du BTS E6"
+    "projects": "Projets"
   },
 
   "contact": {
@@ -33,7 +32,7 @@
   "home": {
     "condition": "23 ans · Étudiant en 2ème année de BTS SIO SLAM",
     "about_me": "<p>Dynamique et curieux par nature, j'ai en permanence des projets en cours, ce qui m'a permis de développer une certaine polyvalence.</p><p>Passionné par les nouvelles techniques de programmation, je suis attentif à concilier la sécurité et les performances des applications tout en les dotant de fonctionnalités innovantes et modernes.</p><p>L'expérience utilisateur étant au coeur de mes exigences, je veille à ce que l'ergonomie soit optimale et que l'application soit la plus agréable possible à utiliser.</p>",
-    "hobbies": "<p>Naturellement sociable, je passe une majorité de mon temps libre avec mes proches ou en société.</p><p>Je passe le restant de ce temps à faire du sport, à lire, ou encore à jouer.</p><p>Mon ouverture d'esprit m'a permis de m'intéresser à de nombreux domaines.</p><p>Les relations humaines et la psychologie m'intéresse particulièrement de par leurs complexités.</p>"
+    "hobbies": "<p>Naturellement sociable, je passe une majorité de mon temps libre avec mes proches ou en société.</p><p>Je passe le restant de ce temps à faire du sport, à lire, ou encore à jouer.</p><p>Mon ouverture d'esprit m'a permis de m'intéresser à de nombreux domaines.</p><p>Les relations humaines et la psychologie m'intéressent particulièrement de par leurs complexités.</p>"
   },
 
   "employment": {
@@ -43,7 +42,7 @@
       "address": "2 rue Joliot Curie, 25870 Les Auxons",
       "date": "2 Septembre 2019 - Aujourd'hui",
       "job": "Développeur web Backend  - Alternance",
-      "desc": "<ul><li>Développement de sites web en se basant sur le CMS Typo3.</li><li>Adaptations / évolutions de modules créés par l'entreprise.</li><li>Intégration de contenus statique via l'outil de template fourni par le CMS.</li><li>Support, développement et mise en oeuvre de correctifs.</li><li>Intégration aux sein de projets gérés selon la méthode Scrum.</li></ul>"
+      "desc": "<ul><li>Développement de sites web en se basant sur le CMS Typo3.</li><li>Adaptations / évolutions de modules créés par l'entreprise.</li><li>Intégration de contenus statiques via l'outil de template fourni par le CMS.</li><li>Support, développement et mise en oeuvre de correctifs.</li><li>Intégration au sein de projets gérés selon la méthode Scrum.</li></ul>"
     },
     "2": {
       "company": "IDfr",
@@ -70,8 +69,8 @@
       "company": "Armée de terre - 13ème Régiment du Génie",
       "address": "Camp du Valdahon, 25800 Valdahon",
       "date": "Août 2014 - Août 2015",
-      "job": "Soldat de Réserve - Réserve opérationelle",
-      "desc": "Total de 2 mois d'entrainemnt pendant les périodes de vacances et les weekends."
+      "job": "Soldat de Réserve - Réserve opérationnelle",
+      "desc": "Total de 2 mois d'entrainement pendant les périodes de vacances et les weekends."
     }
   },
 
@@ -135,7 +134,7 @@
 
   "projects": {
     "title": "Projets",
-    "techs_used": "Technologies utilisés",
+    "techs_used": "Technologies utilisées",
     "desc_project": "Description du projet",
     "technical_details": "Détails techniques",
 
@@ -143,8 +142,8 @@
       "title": "Mon Portfolio en ligne",
       "desc": "Vous êtes actuellement sur ce projet. Il sert de support pour mes présentations, et permet d'accéder aux autres projets.",
       "dialog": {
-        "desc": "<p>Ce projet a pour but de présenter mon portfolio sous la forme de site web. Ce site me présente brièvement et contient toutes les informations essentielles concernant mon parcours de formation au niveau et mes expériences professionnelles. Il fait également étalage des différentes compétences que j'ai pu acquérir. Mes projets sont aussi répertoriés sur ce site, avec leur description détaillé. Ces projets sont open source et sont téléchargeable via mon compte github.<p></p> De plus les projets que j'ai la possibilité d'héberger sont accessibles via un lien, de manière à accéder à la version d'essai.</p><p>Ce site est responsive et met également à disposition une version anglaise.</p>",
-        "technical_details": "<p>Concernant les technologies utilisées :</p><p> Côté backend, j'héberge ce site sur mon propre VPS propulsé par Debian. J'utilise également Docker qui me permet de conteneurisé les technologie dont j'ai besoin pour propulser le site en ligne et assurer son fonctionnement. J'utilise un conteneur ou est installé traefic qui joue le rôle de reverse-proxy me permettant de renouveler automatiquement les certificats SSL et de rediriger le trafic vers les bons conteneurs et via le bon protocole. Derrière celui ci se trouve un conteneur ou est installé un serveur web Nginx permettant de propulser le site en ligne. Un autre contient PHP-fpm, et se charge de m'envoyer des amils via le formuaire de contact présent en frontend.</p><p>Côté frontend, j'ai choisi d'utiliser le framework vuejs. Celui ci me permet de disposer d'une application web ne nécessitant aucun temps de rafraîchissement lors du changement de section ou de langue. Au-delà dae la fluidité que procure cette technologie, le poids total du site web une fois compilé est extrêmement faible, ce qui assure des performances optimales. De plus, cette technologie me permet de profiter pleinement des avantages du templating. L'écosystème de ce framework me permet également de disposer de nombreux modules tel axios ou encore i18n qui me permettent respectivement de faire des appels Ajax le plus simplement possible et de traduire le site.</p><p>Au niveau du design j'ai choisi d'utiliser la librairie Vuetify, orienté matérial design, qui me permet de bénéficier de nombreuses fonctionnalités permettant d'accélérer de simplifier le développement du frontend. On peut noter parmi celles-ci, le support des mouvement tactiles.</p>"
+        "desc": "<p>Ce projet a pour but de présenter mon portfolio sous la forme de site web. Ce site me présente brièvement et contient toutes les informations essentielles concernant mon parcours de formation et mes expériences professionnelles. Il fait également étalage des différentes compétences que j'ai pu acquérir. Mes projets sont aussi répertoriés sur ce site, avec leur description détaillée. Ces projets sont open source et sont téléchargeable via mon compte github.<p></p> De plus les projets que j'ai la possibilité d'héberger sont accessibles via un lien, de manière à accéder à leur version d'essai.</p><p>Ce site est responsive et met également à disposition une version anglaise.</p>",
+        "technical_details": "<p>Concernant les technologies utilisées :</p><p> Côté backend, j'héberge ce site grâce à un plan d'hébergement web.</p><p>Côté frontend, j'ai choisi d'utiliser le framework Vuejs. Celui-ci permet de disposer d'une application web ne nécessitant aucun temps de rafraîchissement lors du changement de section ou de langue. Au-delà de la fluidité que procure cette technologie, le poids total du site web une fois compilé est extrêmement faible, ce qui assure des performances optimales. Grâce à cette technologie je profite pleinement des avantages du templating. L'écosystème de ce framework m'autorise également à disposer de nombreux modules tel axios ou encore i18n qui rendent possible la réalisation d'appels Ajax simplifiés et la traduction du site.</p><p>Au niveau du design j'ai choisi d'utiliser la librairie Vuetify, orientée matérial design, pour bénéficier de nombreuses fonctionnalités afin d'accélérer la simplification du développement du frontend. On peut noter parmi celles-ci, le support des mouvement tactiles.</p>"
       }
     },
     "gym_web": {
