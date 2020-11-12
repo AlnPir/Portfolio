@@ -14,25 +14,43 @@
               Alan&nbsp;
               <span class="blue--text text--lighten-2">Pierre</span>
             </v-card-text>
-            <v-card-text class="subtitle-1 py-0">{{ $t('home.condition') }}</v-card-text>
+            <v-card-text class="subtitle-1 py-0">{{
+              $t("home.condition")
+            }}</v-card-text>
             <v-card-text class="body-2 pt-2">Besançon, France</v-card-text>
             <v-divider />
-            <v-card-text class="body-1 mb-n5" v-html="$t(item.about_me)"></v-card-text>
+            <blockquote class="blockquote font-italic">
+              <p>
+                " Vite et bien, ni plus ni moins. <br />
+                Être et durer, sans trop tarder. <br />
+                Ne pas subir, toujours agir. "
+              </p>
+            </blockquote>
+            <v-card-text
+              class="body-1 my-n8"
+              v-html="$t(item.about_me)"
+            ></v-card-text>
             <v-card-actions>
               <v-card-text
                 class="blue--text text--lighten-2 headline font-italic"
-              >{{ $t(`general.more_about_me`) }}</v-card-text>
+                >{{ $t(`general.more_about_me`) }}</v-card-text
+              >
               <v-spacer></v-spacer>
 
               <v-btn icon @click="show = !show">
-                <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                <v-icon>{{
+                  show ? "mdi-chevron-up" : "mdi-chevron-down"
+                }}</v-icon>
               </v-btn>
             </v-card-actions>
 
             <v-expand-transition>
               <div v-show="show">
                 <v-divider></v-divider>
-                <v-card-text class="body-1" v-html="$t(item.hobbies)"></v-card-text>
+                <v-card-text
+                  class="body-1"
+                  v-html="$t(item.hobbies)"
+                ></v-card-text>
               </div>
             </v-expand-transition>
           </v-card>
@@ -48,9 +66,9 @@ export default {
     show: false,
     item: {
       about_me: "home.about_me",
-      hobbies: "home.hobbies"
-    }
-  })
+      hobbies: "home.hobbies",
+    },
+  }),
 };
 </script>
 

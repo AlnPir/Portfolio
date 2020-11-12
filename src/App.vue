@@ -6,9 +6,13 @@
       </transition>
     </div>
     <div v-else>
-      <v-app>
+      <v-app
+        :style="{
+          'background-image': `linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 25%, rgba(16,16,16,1) 50%, rgba(21,21,21,1) 75%, rgba(32,32,32,1) 100%)`,
+        }"
+      >
         <Nav></Nav>
-        <v-content class="ma-4">
+        <v-content class="ma-1">
           <transition name="fade">
             <router-view></router-view>
           </transition>
@@ -22,6 +26,8 @@
   </div>
 </template>
 
+background-image: ;
+
 <script>
 import Nav from "@/components/Nav";
 import PopinContact from "@/components/PopinContact";
@@ -34,18 +40,18 @@ export default {
     Nav,
     PopinContact,
     Footer,
-    Welcome
+    Welcome,
   },
   data() {
     return {
-      loading: true
+      loading: true,
     };
   },
   beforeMount() {
     setTimeout(() => {
       this.loading = false;
     }, 700);
-  }
+  },
 };
 </script>
 

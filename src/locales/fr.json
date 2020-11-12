@@ -9,16 +9,15 @@
     "send": "Envoyer",
     "cancel": "Annuler"
   },
-
   "navigation_drawer": {
     "status": "Étudiant",
-    "about_me": "A Propos de Moi",
+    "about_me": "Identité",
     "experiences": "Expériences",
     "education": "Diplômes",
     "skills": "Compétences",
-    "projects": "Projets"
+    "projects": "Projets",
+    "contact": "Contact"
   },
-
   "contact": {
     "title": "Me Contacter",
     "name": "Nom",
@@ -28,13 +27,11 @@
     "phone": "Téléphone",
     "message": "Message"
   },
-
   "home": {
-    "condition": "23 ans · Étudiant en 2ème année de BTS SIO SLAM",
-    "about_me": "<p>Dynamique et curieux par nature, j'ai en permanence des projets en cours, ce qui m'a permis de développer une certaine polyvalence.</p><p>Passionné par les nouvelles techniques de programmation, je suis attentif à concilier la sécurité et les performances des applications tout en les dotant de fonctionnalités innovantes et modernes.</p><p>L'expérience utilisateur étant au coeur de mes exigences, je veille à ce que l'ergonomie soit optimale et que l'application soit la plus agréable possible à utiliser.</p>",
+    "condition": "24 ans · Étudiant en Licence générale en Informatique",
+    "about_me": "<p>Dynamique et curieux par nature, j'ai en permanence des projets en cours, ce qui m'a permis de développer une certaine polyvalence.</p><p>Passionné par les nouvelles méthodes de programmation, je suis attentif à concilier la sécurité et les performances des applications tout en les dotant de fonctionnalités innovantes et modernes.</p><p>L'expérience utilisateur étant au coeur de mes exigences, je veille à ce que l'ergonomie soit optimale et que l'application soit la plus agréable possible à utiliser.</p><p>Mes centres d'intérêts multiples et mon goût pour l'efficience m'on fait me tourner vers la philosophie DevOps. J'envisage d'ailleurs d'exercer en tant qu'ingénieur DevOps une fois mes études terminés.</p>",
     "hobbies": "<p>Naturellement sociable, je passe une majorité de mon temps libre avec mes proches ou en société.</p><p>Je passe le restant de ce temps à faire du sport, à lire, ou encore à jouer.</p><p>Mon ouverture d'esprit m'a permis de m'intéresser à de nombreux domaines.</p><p>Les relations humaines et la psychologie m'intéressent particulièrement de par leurs complexités.</p>"
   },
-
   "employment": {
     "title": "Expériences Professionnelles",
     "latest": {
@@ -73,36 +70,42 @@
       "desc": "Total de 2 mois d'entrainement pendant les périodes de vacances et les weekends."
     }
   },
-
   "education": {
     "title": "Diplômes",
     "latest": {
+      "school": "CNAM Franche-Comté Belfort",
+      "address": "UTBM - Site de Belfort - 13 Rue Ernest Thierry Mieg, 90000 Belfort",
+      "date": "Septembre 2020 - Aujourd'hui",
+      "degree": "Licence générale en Informatique",
+      "desc": "30% cours intensifs / 70% alternance."
+    },
+    "2": {
       "school": "Lycée Général et Technologique Louis Pergaud",
       "address": "91-93 Boulevard Léon Blum, 25000 Besançon",
-      "date": "Septembre 2018- Aujourd'hui",
+      "date": "Septembre 2018 - Août 2020",
       "degree": "BTS SIO option SLAM",
       "desc": "<ul><li>Brevet de technicien supérieur services informatiques aux organisations</li><li> Option solutions logicielles et applications métiers</li><li>Option facultative Mathématiques approfondies</li><li>1ère année en formation initiale, 2ème année en alternance</li></ul>"
     },
-    "2": {
+    "3": {
       "school": "",
       "address": "",
       "date": "2015 - 2018",
-      "degree": "Beaucoup d'expériences, mais pas de diplômes",
+      "degree": "Beaucoup d'expériences, mais pas de diplômes.",
       "desc": ""
     },
-    "3": {
+    "4": {
       "school": "Armée de terre - 13ème Régiment du Génie",
       "address": "Camp du Valdahon, 25800 Valdahon",
       "date": "Août 2015",
       "degree": "Certificat d'Aptitude Militaire Élémentaire",
-      "desc": "Obtention du grade de Caporal"
+      "desc": "Obtention du grade de Caporal."
     },
-    "4": {
+    "5": {
       "school": "Lycée d' Enseignement Général Technologique et Professionnel Agricole de Besançon",
       "address": "2 Rue des Chanets, 25410 Dannemarie-sur-Crête",
       "date": "Septembre 2014 - Juillet 2015",
       "degree": "Baccalauréat scientifique",
-      "desc": "Option Biologie"
+      "desc": "Option Biologie."
     },
     "first": {
       "school": "Armée de terre - 13ème Régiment du Génie",
@@ -112,15 +115,16 @@
       "desc": "Entrée dans l'armée en tant qu'homme du rang."
     }
   },
-
   "skills": {
     "title": "Compétences",
     "databases": "Bases de données",
     "languages": "Langages de programmation, de script et de balisage",
+    "languages-web": "Web",
     "libs": "Librairies",
     "server": "Serveur",
     "os": "Systèmes d'exploitations",
     "frameworks": "Frameworks",
+    "frameworks-web": "Frameworks Webs",
     "managers": "Gestionnaires de paquets et de versions",
     "methodology": "Gestion de projet",
     "mastery": {
@@ -131,15 +135,13 @@
       "advanced": "Avancé"
     }
   },
-
   "projects": {
     "title": "Projets",
     "techs_used": "Technologies utilisées",
     "desc_project": "Description du projet",
     "technical_details": "Détails techniques",
-
     "cv": {
-      "title": "Mon Portfolio en ligne",
+      "title": "Portfolio en ligne",
       "desc": "Vous êtes actuellement sur ce projet. Il sert de support pour mes présentations, et permet d'accéder aux autres projets.",
       "dialog": {
         "desc": "<p>Ce projet a pour but de présenter mon portfolio sous la forme de site web. Ce site me présente brièvement et contient toutes les informations essentielles concernant mon parcours de formation et mes expériences professionnelles. Il fait également étalage des différentes compétences que j'ai pu acquérir. Mes projets sont aussi répertoriés sur ce site, avec leur description détaillée. Ces projets sont open source et sont téléchargeable via mon compte github.<p></p> De plus les projets que j'ai la possibilité d'héberger sont accessibles via un lien, de manière à accéder à leur version d'essai.</p><p>Ce site est responsive et met également à disposition une version anglaise.</p>",
@@ -147,8 +149,8 @@
       }
     },
     "gym_web": {
-      "title": "Salle de Sport (Web)",
-      "desc": "Site web fictif d'une salle de sport. Permet à l'utilisateur de s'inscrire à un programme d'entraienement. Accès admin pour gestion.",
+      "title": "Salle de Sport",
+      "desc": "Site web fictif d'une salle de sport. Mise en place de CRUD et de sessions utilisateurs avec différents niveaux de restrictions.",
       "dialog": {
         "desc": "<p>Ce projet a pour but de simuler le site internet une salle de sport. ceci doit donc permettre de nouveaux utilisateurs de s'inscrire, de gérer leur compte les informations qui lui sont y sont liées, de choisir un programme , de souscrire à un abonnement et enfin de choisir un mode de paiement. Celui-ci doit également avoir la possibilité d'enregistrer ses séances. Toutes ses données doivent être consultable par l'utilisateur.</p><p>Le site dois également disposer d'une interface d'administration inaccessible aux utilisateurs. Les administrateur pourrons ainsi gérer l'ensemble du contenu mis à la disposition des utilisateurs.</p>",
         "technical_details": "<p>Concernant les technologie utilisée, j'utilise une base de données MariaDB pour stocker toutes les informations. Utilise également l'interface d'administration phpMyAdmin de manière à faciliter son accès.</p><p>Le site est basée majoritairement sur le framework symphony. Le rendu se fait donc via twig, le moteur de template de symphonie, et le back-office sera aussi gérer par les fonctionnalité qui met à disposition symphony. Le requétage de la base de données se fera via l'intermédiaire de l'ORM doctrine.</p>"

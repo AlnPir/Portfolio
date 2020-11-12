@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1 class="subheading text-center">{{ $t('projects.title') }}</h1>
+    <h1 class="subheading text-center">{{ $t("projects.title") }}</h1>
 
     <v-row fluid>
       <v-card
@@ -15,7 +15,11 @@
         <v-card-title>
           {{ $t(project.title) }}
           <v-spacer></v-spacer>
-          <v-btn icon href="https://github.com/AlnPir?tab=repositories" target="_blank">
+          <v-btn
+            icon
+            href="https://github.com/AlnPir?tab=repositories"
+            target="_blank"
+          >
             <v-icon>mdi-github</v-icon>
           </v-btn>
         </v-card-title>
@@ -53,182 +57,171 @@ export default {
                 items: [
                   {
                     brand: require("@/assets/img/brand/html5.png"),
-                    name: "HTML5"
+                    name: "HTML5",
                   },
                   {
                     brand: require("@/assets/img/brand/css3.png"),
-                    name: "CSS3"
+                    name: "CSS3",
                   },
                   {
                     brand: require("@/assets/img/brand/js.png"),
-                    name: "JavaScript"
+                    name: "JavaScript",
                   },
                   {
                     brand: require("@/assets/img/brand/vuejs.png"),
-                    name: "Vue.js"
+                    name: "Vue.js",
                   },
                   {
                     brand: require("@/assets/img/brand/vuetify.png"),
-                    name: "Vuetify"
-                  }
-                ]
+                    name: "Vuetify",
+                  },
+                ],
               },
               {
                 text: "Backend",
                 items: [
                   {
                     brand: require("@/assets/img/brand/php.png"),
-                    name: "PHP"
+                    name: "PHP",
                   },
                   {
                     brand: require("@/assets/img/brand/git.png"),
-                    name: "Git"
+                    name: "Git",
                   },
                   {
                     brand: require("@/assets/img/brand/npm.png"),
-                    name: "npm"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-        // {
-        //   title: "projects.gym_web.title",
-        //   desc: "projects.gym_web.desc",
-        //   dialog: {
-        //     title: "projects.gym_web.title",
-        //     desc: "projects.gym_web.dialog.desc",
-        //     technical_details: "projects.gym_web.dialog.technical_details",
-        //     skills: [
-        //       {
-        //         text: "Frontend",
-        //         items: [
-        //           {
-        //             brand: require("@/assets/img/brand/html5.png"),
-        //             name: "HTML5"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/css3.png"),
-        //             name: "CSS3"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/js.png"),
-        //             name: "JavaScript"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/bootstrap.png"),
-        //             name: "Bootstrap 4",
-        //             score: 4
-        //           }
-        //         ]
-        //       },
-        //       {
-        //         text: "Backend",
-        //         items: [
-        //           {
-        //             brand: require("@/assets/img/brand/php.png"),
-        //             name: "PHP"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/symfony.png"),
-        //             name: "Symfony"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/nginx.png"),
-        //             name: "Nginx"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/docker.png"),
-        //             name: "Docker"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/git.png"),
-        //             name: "Git"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/debian.png"),
-        //             name: "Debian"
-        //           }
-        //         ]
-        //       }
-        //     ]
-        //   }
-        // },
-        // {
-        //   title: "projects.gym_desktop.title",
-        //   desc: "projects.gym_desktop.desc",
-        //   dialog: {
-        //     title: "projects.gym_desktop.title",
-        //     desc: "projects.gym_desktop.dialog.desc",
-        //     technical_details: "projects.gym_desktop.dialog.technical_details",
-        //     skills: [
-        //       {
-        //         text: "Frontend",
-        //         items: [
-        //           {
-        //             brand: require("@/assets/img/brand/html5.png"),
-        //             name: "HTML5"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/css3.png"),
-        //             name: "CSS3"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/js.png"),
-        //             name: "JavaScript"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/npm.png"),
-        //             name: "npm"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/vuejs.png"),
-        //             name: "Vue.js"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/vuetify.png"),
-        //             name: "Vuetify"
-        //           }
-        //         ]
-        //       },
-        //       {
-        //         text: "Backend",
-        //         items: [
-        //           {
-        //             brand: require("@/assets/img/brand/java.png"),
-        //             name: "Java"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/spring.png"),
-        //             name: "Spring"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/docker.png"),
-        //             name: "Docker"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/git.png"),
-        //             name: "Git"
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/bootstrap.png"),
-        //             name: "Gradle ",
-        //             score: 4
-        //           },
-        //           {
-        //             brand: require("@/assets/img/brand/bootstrap.png"),
-        //             name: "Tomcat ",
-        //             score: 4
-        //           }
-        //         ]
-        //       }
-        //     ]
-        //   }
-        // }
-      ]
+                    name: "npm",
+                  },
+                ],
+              },
+            ],
+          },
+        },
+        {
+          title: "projects.gym_web.title",
+          desc: "projects.gym_web.desc",
+          dialog: {
+            title: "projects.gym_web.title",
+            desc: "projects.gym_web.dialog.desc",
+            technical_details: "projects.gym_web.dialog.technical_details",
+            skills: [
+              {
+                text: "Frontend",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/html5.png"),
+                    name: "HTML5",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/css3.png"),
+                    name: "CSS3",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/js.png"),
+                    name: "JavaScript",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/bootstrap.png"),
+                    name: "Bootstrap 4",
+                  },
+                ],
+              },
+              {
+                text: "Backend",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/php.png"),
+                    name: "PHP",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/symfony.png"),
+                    name: "Symfony",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/docker.png"),
+                    name: "Docker",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/git.png"),
+                    name: "Git",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/debian.png"),
+                    name: "Debian",
+                  },
+                ],
+              },
+            ],
+          },
+        },
+        {
+          title: "projects.gym_desktop.title",
+          desc: "projects.gym_desktop.desc",
+          dialog: {
+            title: "projects.gym_desktop.title",
+            desc: "projects.gym_desktop.dialog.desc",
+            technical_details: "projects.gym_desktop.dialog.technical_details",
+            skills: [
+              {
+                text: "Frontend",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/html5.png"),
+                    name: "HTML5",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/css3.png"),
+                    name: "CSS3",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/js.png"),
+                    name: "JavaScript",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/npm.png"),
+                    name: "npm",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/vuejs.png"),
+                    name: "Vue.js",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/vuetify.png"),
+                    name: "Vuetify",
+                  },
+                ],
+              },
+              {
+                text: "Backend",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/php.png"),
+                    name: "PHP",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/symfony.png"),
+                    name: "Symfony",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/docker.png"),
+                    name: "Docker",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/git.png"),
+                    name: "Git",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/debian.png"),
+                    name: "Debian",
+                  },
+                ],
+              },
+            ],
+          },
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

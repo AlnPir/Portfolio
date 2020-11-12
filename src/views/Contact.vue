@@ -1,17 +1,9 @@
 <template>
-  <div class="popinContact" v-show="$vuetify.breakpoint.mdAndUp">
-    <v-btn bottom color="pink" dark fab fixed right @click="dialog = !dialog">
-      <v-icon>mdi-email</v-icon>
-    </v-btn>
-
-    <v-dialog v-model="dialog" width="800px">
+  <div class="Contact">
+    <v-container>
       <v-card>
-        <v-card-title class="primary">
-          {{ $t(`contact.title`) }}
-          <v-spacer></v-spacer>
-          <v-btn icon @click="dialog = false">
-            <v-icon>mdi-close</v-icon>
-          </v-btn>
+        <v-card-title class="primary text-center">
+          {{ $t("contact.title") }}
         </v-card-title>
         <v-container>
           <v-form ref="form" v-model="valid" lazy-validation>
@@ -63,7 +55,6 @@
         </v-container>
         <v-card-actions>
           <v-spacer />
-          <v-btn @click="dialog = false">{{ $t(`general.cancel`) }}</v-btn>
           <v-btn
             :disabled="!valid"
             color="success"
@@ -75,13 +66,13 @@
           </v-btn>
         </v-card-actions>
       </v-card>
-    </v-dialog>
+    </v-container>
   </div>
 </template>
 
 <script>
 export default {
-  name: "PopinContact",
+  name: "Contact",
   data() {
     return {
       form: {
@@ -90,7 +81,6 @@ export default {
         phone: "",
         message: "",
       },
-      dialog: null,
       valid: true,
       name: "",
       nameRules: [
