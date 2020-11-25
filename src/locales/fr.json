@@ -11,7 +11,7 @@
   },
   "navigation_drawer": {
     "status": "Étudiant",
-    "about_me": "Identité",
+    "about_me": "À propos de moi",
     "experiences": "Expériences",
     "education": "Diplômes",
     "skills": "Compétences",
@@ -29,8 +29,8 @@
   },
   "home": {
     "condition": "24 ans · Étudiant en Licence générale en Informatique",
-    "about_me": "<p>Dynamique et curieux par nature, j'ai en permanence des projets en cours, ce qui m'a permis de développer une certaine polyvalence.</p><p>Passionné par les nouvelles méthodes de programmation, je suis attentif à concilier la sécurité et les performances des applications tout en les dotant de fonctionnalités innovantes et modernes.</p><p>L'expérience utilisateur étant au coeur de mes exigences, je veille à ce que l'ergonomie soit optimale et que l'application soit la plus agréable possible à utiliser.</p><p>Mes centres d'intérêts multiples et mon goût pour l'efficience m'on fait me tourner vers la philosophie DevOps. J'envisage d'ailleurs d'exercer en tant qu'ingénieur DevOps une fois mes études terminés.</p>",
-    "hobbies": "<p>Naturellement sociable, je passe une majorité de mon temps libre avec mes proches ou en société.</p><p>Je passe le restant de ce temps à faire du sport, à lire, ou encore à jouer.</p><p>Mon ouverture d'esprit m'a permis de m'intéresser à de nombreux domaines.</p><p>Les relations humaines et la psychologie m'intéressent particulièrement de par leurs complexités.</p>"
+    "about_me": "<p>Dynamique et curieux par nature, j'ai en permanence des projets en cours, ce qui m'a permis de développer une certaine polyvalence.</p><p>Passionné par les nouvelles méthodes de programmation, je suis attentif à concilier la sécurité et les performances des applications tout en les dotant de fonctionnalités innovantes et modernes.</p><p>L'expérience utilisateur étant au coeur de mes exigences, je veille à ce que l'ergonomie soit optimale et que l'application soit la plus agréable possible à utiliser.</p><p>Mes centres d'intérêts multiples et mon goût pour l'efficience m'on fait me tourner vers la philosophie DevOps et le Cloud Computing. J'envisage d'ailleurs d'exercer dans un de ces domaines une fois mes études terminés.</p>",
+    "hobbies": "<p>Naturellement sociable, je passe une majorité de mon temps libre avec mes proches ou en société.</p><p>Je passe le restant de ce temps à faire du prendre soin de mon corps comme de mon esprit.</p><p>Mon ouverture d'esprit m'a permis de m'intéresser à de nombreux domaines.</p><p>Les relations humaines et la psychologie m'intéressent particulièrement de par leurs complexités.</p>"
   },
   "employment": {
     "title": "Expériences Professionnelles",
@@ -117,26 +117,11 @@
   },
   "skills": {
     "title": "Compétences",
-    "databases": "Bases de données",
-    "languages": "Langages de programmation, de script et de balisage",
-    "languages-web": "Web",
-    "libs": "Librairies",
-    "server": "Serveur",
-    "os": "Systèmes d'exploitations",
-    "frameworks": "Frameworks",
-    "frameworks-web": "Frameworks Webs",
-    "managers": "Gestionnaires de paquets et de versions",
-    "methodology": "Gestion de projet",
-    "mastery": {
-      "beginner": "Débutant",
-      "basic": "Basique",
-      "common": "Commun",
-      "mastered": "Maîtrisé",
-      "advanced": "Avancé"
-    }
+    "desc": "Sans être un expert, j'ai eu l'occasion de mettre ces compétences à l'épreuve au cours de mes études, de mes projets, ou encore de mes activités professionnelles."
   },
   "projects": {
     "title": "Projets",
+    "desc": "Ces projets n'ont pas pour vocation à être parfaits, ils me servent juste de support pour appuyer mes compétences.",
     "techs_used": "Technologies utilisées",
     "desc_project": "Description du projet",
     "technical_details": "Détails techniques",
@@ -144,21 +129,29 @@
       "title": "Portfolio en ligne",
       "desc": "Vous êtes actuellement sur ce projet. Il sert de support pour mes présentations, et permet d'accéder aux autres projets.",
       "dialog": {
-        "desc": "<p>Ce projet a pour but de présenter mon portfolio sous la forme de site web. Ce site me présente brièvement et contient toutes les informations essentielles concernant mon parcours de formation et mes expériences professionnelles. Il fait également étalage des différentes compétences que j'ai pu acquérir. Mes projets sont aussi répertoriés sur ce site, avec leur description détaillée. Ces projets sont open source et sont téléchargeable via mon compte github.<p></p> De plus les projets que j'ai la possibilité d'héberger sont accessibles via un lien, de manière à accéder à leur version d'essai.</p><p>Ce site est responsive et met également à disposition une version anglaise.</p>",
-        "technical_details": "<p>Concernant les technologies utilisées :</p><p> Côté backend, j'héberge ce site grâce à un plan d'hébergement web.</p><p>Côté frontend, j'ai choisi d'utiliser le framework Vuejs. Celui-ci permet de disposer d'une application web ne nécessitant aucun temps de rafraîchissement lors du changement de section ou de langue. Au-delà de la fluidité que procure cette technologie, le poids total du site web une fois compilé est extrêmement faible, ce qui assure des performances optimales. Grâce à cette technologie je profite pleinement des avantages du templating. L'écosystème de ce framework m'autorise également à disposer de nombreux modules tel axios ou encore i18n qui rendent possible la réalisation d'appels Ajax simplifiés et la traduction du site.</p><p>Au niveau du design j'ai choisi d'utiliser la librairie Vuetify, orientée matérial design, pour bénéficier de nombreuses fonctionnalités afin d'accélérer la simplification du développement du frontend. On peut noter parmi celles-ci, le support des mouvement tactiles.</p>"
+        "desc": "<p>Ce projet a pour but de présenter mon portfolio sous la forme de site web. Ce site me présente brièvement et contient toutes les informations essentielles concernant mon parcours de formation et mes expériences professionnelles. Il fait également étalage des différentes compétences que j'ai pu acquérir. Mes projets sont aussi répertoriés sur ce site, avec leur description détaillée. Ces projets sont open source et sont téléchargeable via mon compte github.</p><p>Ce site est responsive et met également à disposition une version anglaise.</p>",
+        "technical_details": "<p>Concernant les technologies utilisées :</p><p> Côté backend, j'héberge ce site grâce à un plan d'hébergement web.</p><p>Côté frontend, j'ai choisi d'utiliser le framework Vuejs. Celui-ci permet de disposer d'une application web ne nécessitant aucun temps de rafraîchissement lors du changement de section ou de langue. Au-delà de la fluidité que procure cette technologie, le poids total du site web une fois compilé est extrêmement faible, ce qui assure des performances optimales. Grâce à cette technologie je profite pleinement des avantages du templating. L'écosystème de ce framework m'autorise également à disposer de nombreux modules tel axios ou encore i18n qui rendent possible la réalisation d'appels Ajax simplifiés et la traduction du site.</p><p>Au niveau du design j'ai choisi d'utiliser la librairie Vuetify, orientée matérial design, pour bénéficier de nombreuses fonctionnalités et de simplifier le développement du frontend.</p>"
       }
     },
-    "gym_web": {
-      "title": "Salle de Sport",
-      "desc": "Site web fictif d'une salle de sport. Mise en place de CRUD et de sessions utilisateurs avec différents niveaux de restrictions.",
+    "fitness_center": {
+      "title": "FitnessCenter",
+      "desc": "Site web basé sur le framework Symfony. Mise en place des opérations CRUD avec différents niveaux de permissions.",
       "dialog": {
-        "desc": "<p>Ce projet a pour but de simuler le site internet une salle de sport. ceci doit donc permettre de nouveaux utilisateurs de s'inscrire, de gérer leur compte les informations qui lui sont y sont liées, de choisir un programme , de souscrire à un abonnement et enfin de choisir un mode de paiement. Celui-ci doit également avoir la possibilité d'enregistrer ses séances. Toutes ses données doivent être consultable par l'utilisateur.</p><p>Le site dois également disposer d'une interface d'administration inaccessible aux utilisateurs. Les administrateur pourrons ainsi gérer l'ensemble du contenu mis à la disposition des utilisateurs.</p>",
-        "technical_details": "<p>Concernant les technologie utilisée, j'utilise une base de données MariaDB pour stocker toutes les informations. Utilise également l'interface d'administration phpMyAdmin de manière à faciliter son accès.</p><p>Le site est basée majoritairement sur le framework symphony. Le rendu se fait donc via twig, le moteur de template de symphonie, et le back-office sera aussi gérer par les fonctionnalité qui met à disposition symphony. Le requétage de la base de données se fera via l'intermédiaire de l'ORM doctrine.</p>"
+        "desc": "<p>Ce projet a pour but de simuler le site internet d'une salle de sport. Celui ci doit donc permettre de nouveaux utilisateurs de consulter les informations qui lui sont y sont liées.</p><p>Le site dispose d'une interface d'administration accessible uniquement par les administrateurs. Ceux-ci peuvent ainsi gérer l'ensemble du contenu mis à la disposition des utilisateurs.</p>",
+        "technical_details": "<p>Concernant les technologie utilisée : </p><p>Le rendu Front-end se fait via twig, le moteur de template de Symfony.</p><p> J'utilise une base de données MariaDB pour stocker toutes les données. J'utilise également l'interface d'administration phpMyAdmin de manière à faciliter sa gestion.</p> Côté Back-end, il est entièrement géré par les fonctionnalité que met à disposition le framework Symphony.</p><p> L'application est entièrement conteneurisée grâce à Docker.</p>"
       }
     },
-    "gym_desktop": {
-      "title": "Salle de Sport (Bureau)",
-      "desc": "Application pour gèrer les adhérants à la salle de sport fictive, créer leur carte d'adhérent, et éditer leurs factures.",
+    "microshop": {
+      "title": "MicroShop",
+      "desc": "Application minimaliste basé sur le framework Spring et reposant sur une architecture orienté microservices.",
+      "dialog": {
+        "desc": "<p>Ce projet a pour but de simuler une application e-commerce ultraminimaliste composée de 4 microservices.</p><ul><li>Client, qui se charge de mettre à disposition l'interface qui permet de consommer les microservices. </li><li>Product, qui se charge de lister tous les produits et récupérer un produit par son id.</li><li>Payment, qui permet de simuler le paiement d'une commande. Une fois le paiement enregistré, il fait appel au Microservice Order pour mettre à jour le statut de la commande</li><li>Order, qui se charge de passer une commande et de récupérer une commande par son id.</li></ul>",
+        "technical_details": "<p>Concernant les technologie utilisée, j'utilise le framework Spring comme base pour construire chaque microservice, à l'exception du microservice client, qui est une application web vuejs...</p>"
+      }
+    },
+    "devops_pipeline": {
+      "title": "Pipeline DevOps",
+      "desc": "Application minimaliste basé sur une architecture orienté microservice. Simule une application e-commerce.",
       "dialog": {
         "desc": "<p>Ce projet a pour but de simuler logiciel de bureau permettant de gérer les utilisateurs d'une salle de sport, de générer des factures elle crée des cartes d'abonnés.</p>",
         "technical_details": "<p>Concernant les détails techniques, j'ai choisi d'utiliser langage Java couplet au framework spring de manière à faciliter le développement de l'API Rest qui a pour vocation de servir les informations  à ma web application créer avec le framework vue JS.</p><p>J'ai choisi d'utiliser Junit en ce qui concerne les tests unitaires, gradle comme outils de build et le module spring boot JPA qui permet de requêter la base de données simplement.</p><p>L'API est servie par un serveur tomcat.</p>"

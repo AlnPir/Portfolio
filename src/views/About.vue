@@ -19,15 +19,8 @@
             }}</v-card-text>
             <v-card-text class="body-2 pt-2">Besançon, France</v-card-text>
             <v-divider />
-            <blockquote class="blockquote font-italic">
-              <p>
-                " Vite et bien, ni plus ni moins. <br />
-                Être et durer, sans trop tarder. <br />
-                Ne pas subir, toujours agir. "
-              </p>
-            </blockquote>
             <v-card-text
-              class="body-1 my-n8"
+              class="body-1"
               v-html="$t(item.about_me)"
             ></v-card-text>
             <v-card-actions>
@@ -51,6 +44,13 @@
                   class="body-1"
                   v-html="$t(item.hobbies)"
                 ></v-card-text>
+                <blockquote class="blockquote font-italic">
+              <p>
+                " Vite et bien, ni plus ni moins. <br />
+                Être et durer, sans trop tarder. <br />
+                Ne pas subir, toujours agir. "
+              </p>
+            </blockquote>
               </div>
             </v-expand-transition>
           </v-card>

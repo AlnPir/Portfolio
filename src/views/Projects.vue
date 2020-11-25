@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <h1 class="subheading text-center">{{ $t("projects.title") }}</h1>
-
+    <p class="text-center">{{ $t("projects.desc") }}</p>
     <v-row fluid>
       <v-card
         class="mx-auto mt-5"
@@ -15,11 +15,8 @@
         <v-card-title>
           {{ $t(project.title) }}
           <v-spacer></v-spacer>
-          <v-btn
-            icon
-            href="https://github.com/AlnPir?tab=repositories"
-            target="_blank"
-          >
+          <span class="caption">{{ project.status }}</span>
+          <v-btn icon :href="`${project.repository}`" target="_blank">
             <v-icon>mdi-github</v-icon>
           </v-btn>
         </v-card-title>
@@ -47,6 +44,8 @@ export default {
         {
           title: "projects.cv.title",
           desc: "projects.cv.desc",
+          repository: "https://github.com/AlnPir/Portfolio",
+          status: "100%",
           dialog: {
             title: "projects.cv.title",
             desc: "projects.cv.dialog.desc",
@@ -98,12 +97,15 @@ export default {
           },
         },
         {
-          title: "projects.gym_web.title",
-          desc: "projects.gym_web.desc",
+          title: "projects.fitness_center.title",
+          desc: "projects.fitness_center.desc",
+          repository: "https://github.com/AlnPir/FitnessCenter",
+          status: "100%",
           dialog: {
-            title: "projects.gym_web.title",
-            desc: "projects.gym_web.dialog.desc",
-            technical_details: "projects.gym_web.dialog.technical_details",
+            title: "projects.fitness_center.title",
+            desc: "projects.fitness_center.dialog.desc",
+            technical_details:
+              "projects.fitness_center.dialog.technical_details",
             skills: [
               {
                 text: "Frontend",
@@ -134,8 +136,26 @@ export default {
                     name: "PHP",
                   },
                   {
+                    brand: require("@/assets/img/brand/composer.png"),
+                    name: "Composer",
+                  },
+                  {
                     brand: require("@/assets/img/brand/symfony.png"),
                     name: "Symfony",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/mariadb.png"),
+                    name: "MariaDB",
+                  },
+                ],
+              },
+              {
+                text: "Server",
+                items: [
+                  
+                  {
+                    brand: require("@/assets/img/brand/nginx.png"),
+                    name: "Nginx",
                   },
                   {
                     brand: require("@/assets/img/brand/docker.png"),
@@ -146,8 +166,8 @@ export default {
                     name: "Git",
                   },
                   {
-                    brand: require("@/assets/img/brand/debian.png"),
-                    name: "Debian",
+                    brand: require("@/assets/img/brand/linux.png"),
+                    name: "Linux",
                   },
                 ],
               },
@@ -155,12 +175,15 @@ export default {
           },
         },
         {
-          title: "projects.gym_desktop.title",
-          desc: "projects.gym_desktop.desc",
+          title: "projects.microshop.title",
+          desc: "projects.microshop.desc",
+          repository: "https://github.com/AlnPir/MicroShop",
+          status: "30%",
           dialog: {
-            title: "projects.gym_desktop.title",
-            desc: "projects.gym_desktop.dialog.desc",
-            technical_details: "projects.gym_desktop.dialog.technical_details",
+            title: "projects.microshop.title",
+            desc: "projects.microshop.dialog.desc",
+            technical_details:
+              "projects.microshop.dialog.technical_details",
             skills: [
               {
                 text: "Frontend",
@@ -195,12 +218,25 @@ export default {
                 text: "Backend",
                 items: [
                   {
-                    brand: require("@/assets/img/brand/php.png"),
-                    name: "PHP",
+                    brand: require("@/assets/img/brand/java.png"),
+                    name: "Java",
                   },
                   {
-                    brand: require("@/assets/img/brand/symfony.png"),
-                    name: "Symfony",
+                    brand: require("@/assets/img/brand/spring.png"),
+                    name: "Spring",
+                  },
+                   {
+                    brand: require("@/assets/img/brand/maven.png"),
+                    name: "Maven",
+                  },
+                ],
+              },
+              {
+                text: "Server",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/tomcat.png"),
+                    name: "Tomcat",
                   },
                   {
                     brand: require("@/assets/img/brand/docker.png"),
@@ -211,14 +247,81 @@ export default {
                     name: "Git",
                   },
                   {
-                    brand: require("@/assets/img/brand/debian.png"),
-                    name: "Debian",
+                    brand: require("@/assets/img/brand/linux.png"),
+                    name: "Linux",
                   },
                 ],
               },
             ],
           },
         },
+        //  {
+        //   title: "projects.devops_pipeline.title",
+        //   desc: "projects.devops_pipeline.desc",
+        //   repository: "",
+        //   status: "5%",
+        //   dialog: {
+        //     title: "projects.devops_pipeline.title",
+        //     desc: "projects.devops_pipeline.dialog.desc",
+        //     technical_details:
+        //       "projects.devops_pipeline.dialog.technical_details",
+        //     skills: [
+        //     {
+        //       text: "Virtualization",
+        //       items: [
+        //         {
+        //           brand: require("@/assets/img/brand/vagrant.png"),
+        //           name: "Vagrant",
+        //         },
+        //       ],
+        //     },
+        //     {
+        //       text: "CI/CD",
+        //       items: [
+        //         {
+        //           brand: require("@/assets/img/brand/ansible.png"),
+        //           name: "Ansible",
+        //         },
+        //         {
+        //           brand: require("@/assets/img/brand/jenkins.png"),
+        //           name: "Jenkins",
+        //         },
+        //         {
+        //           brand: require("@/assets/img/brand/gitlab.png"),
+        //           name: "Gitlab",
+        //         },
+        //       ],
+        //     },
+        //     {
+        //       text: "Tests",
+        //       items: [
+        //         {
+        //           brand: require("@/assets/img/brand/jmeter.png"),
+        //           name: "Jmeter",
+        //         },
+        //       ],
+        //     },
+        //     {
+        //       text: "Containerization ",
+        //       items: [
+        //         {
+        //           brand: require("@/assets/img/brand/docker.png"),
+        //           name: "Docker",
+        //         },
+        //       ],
+        //     },
+        //     {
+        //       text: "Project Management",
+        //       items: [
+        //         {
+        //           brand: require("@/assets/img/brand/scrum.png"),
+        //           name: "Scrum",
+        //         },
+        //       ],
+        //     },
+        //   ],
+        //   },
+        // },
       ],
     };
   },

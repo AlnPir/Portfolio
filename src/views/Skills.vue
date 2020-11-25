@@ -1,18 +1,9 @@
 <template>
   <v-container>
     <h1 class="subheading text-center">{{ $t("skills.title") }}</h1>
+    <p class="text-center">{{ $t("skills.desc") }}</p>
     <v-row>
       <v-col sm="12">
-        <v-expansion-panels :value="0">
-          <v-expansion-panel>
-            <v-expansion-panel-header>
-              <h2 class="text-center">{{ $t(items[0].title) }}</h2>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              <SkillCard :card="items[0].card"></SkillCard>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
         <v-row>
           <v-col cols="12" sm="6">
             <v-expansion-panels :value="0">
@@ -39,6 +30,16 @@
             </v-expansion-panels>
           </v-col>
         </v-row>
+        <v-expansion-panels :value="0">
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <h2 class="text-center">{{ $t(items[0].title) }}</h2>
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <SkillCard :card="items[0].card"></SkillCard>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
       </v-col>
     </v-row>
   </v-container>
@@ -66,32 +67,32 @@ export default {
                 },
               ],
             },
-            {
-              text: "CI/CD",
-              items: [
-                {
-                  brand: require("@/assets/img/brand/ansible.png"),
-                  name: "Ansible",
-                },
-                {
-                  brand: require("@/assets/img/brand/jenkins.png"),
-                  name: "Jenkins",
-                },
-                {
-                  brand: require("@/assets/img/brand/gitlab.png"),
-                  name: "Gitlab",
-                },
-              ],
-            },
-            {
-              text: "Tests",
-              items: [
-                {
-                  brand: require("@/assets/img/brand/jmeter.png"),
-                  name: "Jmeter",
-                },
-              ],
-            },
+            // {
+            //   text: "CI/CD",
+            //   items: [
+            //     {
+            //       brand: require("@/assets/img/brand/ansible.png"),
+            //       name: "Ansible",
+            //     },
+            //     {
+            //       brand: require("@/assets/img/brand/jenkins.png"),
+            //       name: "Jenkins",
+            //     },
+            //     {
+            //       brand: require("@/assets/img/brand/gitlab.png"),
+            //       name: "Gitlab",
+            //     },
+            //   ],
+            // },
+            // {
+            //   text: "Tests",
+            //   items: [
+            //     {
+            //       brand: require("@/assets/img/brand/jmeter.png"),
+            //       name: "Jmeter",
+            //     },
+            //   ],
+            // },
             {
               text: "Containerization ",
               items: [
@@ -202,7 +203,10 @@ export default {
                   brand: require("@/assets/img/brand/nginx.png"),
                   name: "Nginx",
                 },
-
+                {
+                  brand: require("@/assets/img/brand/tomcat.png"),
+                  name: "Tomcat",
+                },
                 {
                   brand: require("@/assets/img/brand/traefik.png"),
                   name: "Traefik",
@@ -234,6 +238,10 @@ export default {
                   name: "MariaBD",
                 },
                 {
+                  brand: require("@/assets/img/brand/sqlite.png"),
+                  name: "Sqlite",
+                },
+                {
                   brand: require("@/assets/img/brand/elasticsearch.png"),
                   name: "ElasticSearch",
                 },
@@ -243,16 +251,12 @@ export default {
               text: "Operating System",
               items: [
                 {
-                  brand: require("@/assets/img/brand/debian.png"),
-                  name: "Debian",
+                  brand: require("@/assets/img/brand/linux.png"),
+                  name: "Linux",
                 },
                 {
                   brand: require("@/assets/img/brand/windows.png"),
                   name: "Windows",
-                },
-                {
-                  brand: require("@/assets/img/brand/archlinux.png"),
-                  name: "ArchLinux",
                 },
               ],
             },
