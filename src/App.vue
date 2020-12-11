@@ -12,13 +12,11 @@
         }"
       >
         <Nav></Nav>
-        <v-content class="ma-1">
+        <v-main class="ma-1">
           <transition name="fade">
             <router-view></router-view>
           </transition>
-        </v-content>
-
-        <PopinContact></PopinContact>
+        </v-main>
 
         <Footer></Footer>
       </v-app>
@@ -26,11 +24,8 @@
   </div>
 </template>
 
-background-image: ;
-
 <script>
 import Nav from "@/components/Nav";
-import PopinContact from "@/components/PopinContact";
 import Footer from "@/components/Footer";
 import Welcome from "@/components/Welcome";
 
@@ -38,7 +33,6 @@ export default {
   name: "App",
   components: {
     Nav,
-    PopinContact,
     Footer,
     Welcome,
   },

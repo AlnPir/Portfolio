@@ -23,14 +23,14 @@
               class="body-1"
               v-html="$t(item.about_me)"
             ></v-card-text>
-            <v-card-actions>
+            <v-card-actions @click="show = !show">
               <v-card-text
                 class="blue--text text--lighten-2 headline font-italic"
                 >{{ $t(`general.more_about_me`) }}</v-card-text
               >
               <v-spacer></v-spacer>
 
-              <v-btn icon @click="show = !show">
+              <v-btn icon>
                 <v-icon>{{
                   show ? "mdi-chevron-up" : "mdi-chevron-down"
                 }}</v-icon>
@@ -44,13 +44,13 @@
                   class="body-1"
                   v-html="$t(item.hobbies)"
                 ></v-card-text>
-                <blockquote class="blockquote font-italic">
-              <p>
-                " Vite et bien, ni plus ni moins. <br />
-                Être et durer, sans trop tarder. <br />
-                Ne pas subir, toujours agir. "
-              </p>
-            </blockquote>
+                <blockquote class="blockquote font-italic my-n5">
+                  <p>
+                    " Vite et bien, ni plus ni moins. <br />
+                    Être et durer, sans trop tarder. <br />
+                    Ne pas subir, toujours agir. "
+                  </p>
+                </blockquote>
               </div>
             </v-expand-transition>
           </v-card>

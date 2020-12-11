@@ -33,7 +33,7 @@
         <v-flex v-for="(item, key) in dialog.skills" :key="`skills-${key}`" m6>
           <v-card class="ma-5 px-2 elevation-4">
             <v-card-title class="nobreak subheading font-weight-bold">
-              {{ $t(item.text) }}
+              {{ item.text }}
             </v-card-title>
             <v-divider></v-divider>
             <v-row>

@@ -4,12 +4,22 @@
     <p class="text-center">{{ $t("skills.desc") }}</p>
     <v-row>
       <v-col sm="12">
+        <v-expansion-panels :value="0">
+          <v-expansion-panel>
+            <v-expansion-panel-header>
+              <h2 class="text-center">{{ items[0].title }}</h2>
+            </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              <SkillCard :card="items[0].card"></SkillCard>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
         <v-row>
           <v-col cols="12" sm="6">
             <v-expansion-panels :value="0">
               <v-expansion-panel>
                 <v-expansion-panel-header>
-                  <h2 class="text-center">{{ $t(items[1].title) }}</h2>
+                  <h2 class="text-center">{{ items[1].title }}</h2>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <SkillCard :card="items[1].card"></SkillCard>
@@ -21,7 +31,7 @@
             <v-expansion-panels :value="0">
               <v-expansion-panel>
                 <v-expansion-panel-header>
-                  <h2 class="text-center">{{ $t(items[2].title) }}</h2>
+                  <h2 class="text-center">{{ items[2].title }}</h2>
                 </v-expansion-panel-header>
                 <v-expansion-panel-content>
                   <SkillCard :card="items[2].card"></SkillCard>
@@ -30,21 +40,10 @@
             </v-expansion-panels>
           </v-col>
         </v-row>
-        <v-expansion-panels :value="0">
-          <v-expansion-panel>
-            <v-expansion-panel-header>
-              <h2 class="text-center">{{ $t(items[0].title) }}</h2>
-            </v-expansion-panel-header>
-            <v-expansion-panel-content>
-              <SkillCard :card="items[0].card"></SkillCard>
-            </v-expansion-panel-content>
-          </v-expansion-panel>
-        </v-expansion-panels>
       </v-col>
     </v-row>
   </v-container>
 </template>
-
 
 <script>
 import SkillCard from "@/components/SkillCard";
@@ -67,34 +66,44 @@ export default {
                 },
               ],
             },
-            // {
-            //   text: "CI/CD",
-            //   items: [
-            //     {
-            //       brand: require("@/assets/img/brand/ansible.png"),
-            //       name: "Ansible",
-            //     },
-            //     {
-            //       brand: require("@/assets/img/brand/jenkins.png"),
-            //       name: "Jenkins",
-            //     },
-            //     {
-            //       brand: require("@/assets/img/brand/gitlab.png"),
-            //       name: "Gitlab",
-            //     },
-            //   ],
-            // },
-            // {
-            //   text: "Tests",
-            //   items: [
-            //     {
-            //       brand: require("@/assets/img/brand/jmeter.png"),
-            //       name: "Jmeter",
-            //     },
-            //   ],
-            // },
             {
-              text: "Containerization ",
+              text: "Scheduler",
+              items: [
+                {
+                  brand: require("@/assets/img/brand/jenkins.png"),
+                  name: "Jenkins",
+                },
+              ],
+            },
+            {
+              text: "Orchestrator",
+              items: [
+                {
+                  brand: require("@/assets/img/brand/ansible.png"),
+                  name: "Ansible",
+                },
+              ],
+            },
+            {
+              text: "Testing",
+              items: [
+                {
+                  brand: require("@/assets/img/brand/jmeter.png"),
+                  name: "Jmeter",
+                },
+              ],
+            },
+            {
+              text: "Repository",
+              items: [
+                {
+                  brand: require("@/assets/img/brand/gitlab.png"),
+                  name: "Gitlab",
+                },
+              ],
+            },
+            {
+              text: "Containerization",
               items: [
                 {
                   brand: require("@/assets/img/brand/docker.png"),
@@ -107,7 +116,7 @@ export default {
               items: [
                 {
                   brand: require("@/assets/img/brand/scrum.png"),
-                  name: "Scrum",
+                  name: "Agile Scrum",
                 },
               ],
             },
@@ -168,6 +177,14 @@ export default {
                   brand: require("@/assets/img/brand/spring.png"),
                   name: "Spring",
                 },
+                {
+                  brand: require("@/assets/img/brand/python.png"),
+                  name: "Python",
+                },
+                {
+                  brand: require("@/assets/img/brand/c.png"),
+                  name: "C",
+                },
               ],
             },
             {
@@ -217,14 +234,6 @@ export default {
               text: "Scripting",
               items: [
                 {
-                  brand: require("@/assets/img/brand/python.png"),
-                  name: "Python",
-                },
-                {
-                  brand: require("@/assets/img/brand/c.png"),
-                  name: "C",
-                },
-                {
                   brand: require("@/assets/img/brand/bash.png"),
                   name: "Bash",
                 },
@@ -235,7 +244,7 @@ export default {
               items: [
                 {
                   brand: require("@/assets/img/brand/mariadb.png"),
-                  name: "MariaBD",
+                  name: "MariaDB",
                 },
                 {
                   brand: require("@/assets/img/brand/sqlite.png"),
@@ -251,8 +260,16 @@ export default {
               text: "Operating System",
               items: [
                 {
-                  brand: require("@/assets/img/brand/linux.png"),
-                  name: "Linux",
+                  brand: require("@/assets/img/brand/debian.png"),
+                  name: "Debian",
+                },
+                {
+                  brand: require("@/assets/img/brand/archlinux.png"),
+                  name: "Arch Linux",
+                },
+                {
+                  brand: require("@/assets/img/brand/alpinelinux.png"),
+                  name: "Alpine Linux",
                 },
                 {
                   brand: require("@/assets/img/brand/windows.png"),

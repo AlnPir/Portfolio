@@ -9,7 +9,7 @@
       }"
     >
       <v-list>
-        <v-list-item two-line :class="miniVariant && 'px-0'">
+        <v-list-item>
           <v-list-item-avatar>
             <v-img src="@/assets/img/me.png" />
           </v-list-item-avatar>
@@ -24,7 +24,7 @@
           </v-list-item-content>
         </v-list-item>
         <v-divider></v-divider>
-        <v-list-item-group v-model="item">
+        <v-list-item-group>
           <v-list-item
             v-for="(item, i) in items"
             :key="i"
@@ -41,6 +41,8 @@
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
+
+        <PopinContact></PopinContact>
       </v-list>
     </v-navigation-drawer>
 
@@ -48,10 +50,10 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
       dark
-      src="@/assets/img/bg-2.webp"
+      src="@/assets/img/bg-nav.webp"
     >
       <v-row id="rowIcons">
-        <v-btn icon class="mx-auto">
+        <v-btn icon disabled class="mx-auto">
           <v-img src="@/assets/img/logo.png" width="50"></v-img>
         </v-btn>
         <v-btn
@@ -81,11 +83,13 @@
 
 <script>
 import LangSwitcher from "@/components/LangSwitcher";
+import PopinContact from "@/components/PopinContact";
 
 export default {
   name: "Nav",
   components: {
     LangSwitcher,
+    PopinContact,
   },
   data() {
     return {
@@ -111,11 +115,6 @@ export default {
           icon: "mdi-cellphone-link",
           text: "projects",
           route: "/projects",
-        },
-        {
-          icon: "mdi-email",
-          text: "contact",
-          route: "/contact",
         },
       ],
     };

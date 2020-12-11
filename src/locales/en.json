@@ -23,7 +23,7 @@
     "company": "Company",
     "job": "Position",
     "email": "Email",
-    "telephone": "Phone",
+    "phone": "Phone",
     "message": "Message"
   },
   "home": {

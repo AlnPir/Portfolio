@@ -10,7 +10,7 @@
         v-for="(project, key) in items"
         :key="`project-${key}`"
       >
-        <v-img src="@/assets/img/bg-2.webp" height="200px"></v-img>
+        <v-img src="@/assets/img/bg-nav.webp" height="200px"></v-img>
 
         <v-card-title>
           {{ $t(project.title) }}
@@ -31,7 +31,6 @@
   </v-container>
 </template>
 
-
 <script>
 import DialogProject from "@/components/DialogProject";
 
@@ -42,14 +41,82 @@ export default {
     return {
       items: [
         {
-          title: "projects.cv.title",
-          desc: "projects.cv.desc",
-          repository: "https://github.com/AlnPir/Portfolio",
-          status: "100%",
+          title: "projects.devops_pipeline.title",
+          desc: "projects.devops_pipeline.desc",
+          repository: "https://github.com/AlnPir/DevOps-Pipeline",
+          status: "5%",
           dialog: {
-            title: "projects.cv.title",
-            desc: "projects.cv.dialog.desc",
-            technical_details: "projects.cv.dialog.technical_details",
+            title: "projects.devops_pipeline.title",
+            desc: "projects.devops_pipeline.dialog.desc",
+            technical_details:
+              "projects.devops_pipeline.dialog.technical_details",
+            skills: [
+              {
+                text: "Virtualization",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/vagrant.png"),
+                    name: "Vagrant",
+                  },
+                ],
+              },
+              {
+                text: "Scheduler",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/jenkins.png"),
+                    name: "Jenkins",
+                  },
+                ],
+              },
+              {
+                text: "Orchestrator",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/ansible.png"),
+                    name: "Ansible",
+                  },
+                ],
+              },
+              {
+                text: "Testing",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/jmeter.png"),
+                    name: "Jmeter",
+                  },
+                ],
+              },
+              {
+                text: "Repository",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/gitlab.png"),
+                    name: "Gitlab",
+                  },
+                ],
+              },
+              {
+                text: "Containerization",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/docker.png"),
+                    name: "Docker",
+                  },
+                ],
+              },
+            ],
+          },
+        },
+        {
+          title: "projects.microshop.title",
+          desc: "projects.microshop.desc",
+          repository: "https://github.com/AlnPir/MicroShop",
+          status: "30%",
+          dialog: {
+            title: "projects.microshop.title",
+            desc: "projects.microshop.dialog.desc",
+            technical_details: "projects.microshop.dialog.technical_details",
             skills: [
               {
                 text: "Frontend",
@@ -67,6 +134,10 @@ export default {
                     name: "JavaScript",
                   },
                   {
+                    brand: require("@/assets/img/brand/npm.png"),
+                    name: "npm",
+                  },
+                  {
                     brand: require("@/assets/img/brand/vuejs.png"),
                     name: "Vue.js",
                   },
@@ -80,16 +151,37 @@ export default {
                 text: "Backend",
                 items: [
                   {
-                    brand: require("@/assets/img/brand/php.png"),
-                    name: "PHP",
+                    brand: require("@/assets/img/brand/java.png"),
+                    name: "Java",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/spring.png"),
+                    name: "Spring",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/maven.png"),
+                    name: "Maven",
+                  },
+                ],
+              },
+              {
+                text: "Server",
+                items: [
+                  {
+                    brand: require("@/assets/img/brand/tomcat.png"),
+                    name: "Tomcat",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/docker.png"),
+                    name: "Docker",
                   },
                   {
                     brand: require("@/assets/img/brand/git.png"),
                     name: "Git",
                   },
                   {
-                    brand: require("@/assets/img/brand/npm.png"),
-                    name: "npm",
+                    brand: require("@/assets/img/brand/alpinelinux.png"),
+                    name: "Alpine Linux",
                   },
                 ],
               },
@@ -152,7 +244,6 @@ export default {
               {
                 text: "Server",
                 items: [
-                  
                   {
                     brand: require("@/assets/img/brand/nginx.png"),
                     name: "Nginx",
@@ -166,8 +257,12 @@ export default {
                     name: "Git",
                   },
                   {
-                    brand: require("@/assets/img/brand/linux.png"),
-                    name: "Linux",
+                    brand: require("@/assets/img/brand/debian.png"),
+                    name: "Debian",
+                  },
+                  {
+                    brand: require("@/assets/img/brand/alpinelinux.png"),
+                    name: "Alpine Linux",
                   },
                 ],
               },
@@ -175,15 +270,14 @@ export default {
           },
         },
         {
-          title: "projects.microshop.title",
-          desc: "projects.microshop.desc",
-          repository: "https://github.com/AlnPir/MicroShop",
-          status: "30%",
+          title: "projects.cv.title",
+          desc: "projects.cv.desc",
+          repository: "https://github.com/AlnPir/Portfolio",
+          status: "100%",
           dialog: {
-            title: "projects.microshop.title",
-            desc: "projects.microshop.dialog.desc",
-            technical_details:
-              "projects.microshop.dialog.technical_details",
+            title: "projects.cv.title",
+            desc: "projects.cv.dialog.desc",
+            technical_details: "projects.cv.dialog.technical_details",
             skills: [
               {
                 text: "Frontend",
@@ -201,10 +295,6 @@ export default {
                     name: "JavaScript",
                   },
                   {
-                    brand: require("@/assets/img/brand/npm.png"),
-                    name: "npm",
-                  },
-                  {
                     brand: require("@/assets/img/brand/vuejs.png"),
                     name: "Vue.js",
                   },
@@ -218,110 +308,22 @@ export default {
                 text: "Backend",
                 items: [
                   {
-                    brand: require("@/assets/img/brand/java.png"),
-                    name: "Java",
-                  },
-                  {
-                    brand: require("@/assets/img/brand/spring.png"),
-                    name: "Spring",
-                  },
-                   {
-                    brand: require("@/assets/img/brand/maven.png"),
-                    name: "Maven",
-                  },
-                ],
-              },
-              {
-                text: "Server",
-                items: [
-                  {
-                    brand: require("@/assets/img/brand/tomcat.png"),
-                    name: "Tomcat",
-                  },
-                  {
-                    brand: require("@/assets/img/brand/docker.png"),
-                    name: "Docker",
+                    brand: require("@/assets/img/brand/php.png"),
+                    name: "PHP",
                   },
                   {
                     brand: require("@/assets/img/brand/git.png"),
                     name: "Git",
                   },
                   {
-                    brand: require("@/assets/img/brand/linux.png"),
-                    name: "Linux",
+                    brand: require("@/assets/img/brand/npm.png"),
+                    name: "npm",
                   },
                 ],
               },
             ],
           },
         },
-        //  {
-        //   title: "projects.devops_pipeline.title",
-        //   desc: "projects.devops_pipeline.desc",
-        //   repository: "",
-        //   status: "5%",
-        //   dialog: {
-        //     title: "projects.devops_pipeline.title",
-        //     desc: "projects.devops_pipeline.dialog.desc",
-        //     technical_details:
-        //       "projects.devops_pipeline.dialog.technical_details",
-        //     skills: [
-        //     {
-        //       text: "Virtualization",
-        //       items: [
-        //         {
-        //           brand: require("@/assets/img/brand/vagrant.png"),
-        //           name: "Vagrant",
-        //         },
-        //       ],
-        //     },
-        //     {
-        //       text: "CI/CD",
-        //       items: [
-        //         {
-        //           brand: require("@/assets/img/brand/ansible.png"),
-        //           name: "Ansible",
-        //         },
-        //         {
-        //           brand: require("@/assets/img/brand/jenkins.png"),
-        //           name: "Jenkins",
-        //         },
-        //         {
-        //           brand: require("@/assets/img/brand/gitlab.png"),
-        //           name: "Gitlab",
-        //         },
-        //       ],
-        //     },
-        //     {
-        //       text: "Tests",
-        //       items: [
-        //         {
-        //           brand: require("@/assets/img/brand/jmeter.png"),
-        //           name: "Jmeter",
-        //         },
-        //       ],
-        //     },
-        //     {
-        //       text: "Containerization ",
-        //       items: [
-        //         {
-        //           brand: require("@/assets/img/brand/docker.png"),
-        //           name: "Docker",
-        //         },
-        //       ],
-        //     },
-        //     {
-        //       text: "Project Management",
-        //       items: [
-        //         {
-        //           brand: require("@/assets/img/brand/scrum.png"),
-        //           name: "Scrum",
-        //         },
-        //       ],
-        //     },
-        //   ],
-        //   },
-        // },
       ],
     };
   },
